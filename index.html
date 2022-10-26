@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bitcoin, simply explained.</title>
+    <meta
+      name="Bitcoin, simply explained"
+      content="Eeasy to understand information on Bitcoin"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/bitcoineasy/images/master/bitcoinfavicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="toggle"><i class="fa fa-moon-o" aria-hidden="true"></i></div>
+    <div class="content">
+      <div class="navbar" id="mynavbar">
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="faqs.html">FAQs</a>
+        <!--<a href="donate.html">Donate</a>-->
+
+        <!--      <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-language"></i>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="deutsch.html">Deutsch</a>
+        </div>
+      </div>-->
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="responsiveNavbarFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <script>
+        function responsiveNavbarFunction() {
+          var x = document.getElementById("mynavbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+      </script>
+
+      <header class="header">
+        <a href="https://bitcoineasy.github.io">
+          <img
+            src="https://raw.githubusercontent.com/bitcoineasy/images/master/Bitcoin.png"
+            alt="Bitcoin logo"
+            class="logo"
+        /></a>
+        <h1>Bitcoin, simply explained.</h1>
+      </header>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i style="font-size: 24px" class="fas">&#xf062;</i>
+      </button>
+
+      <article class="main">
+        <div id="toc_container">
+          <p class="toc_title">Contents</p>
+          <ol class="toc_list">
+            <li><a href="#whatisbitcoin">What is Bitcoin?</a></li>
+            <li>
+              <a href="#energy"
+                >Does Bitcoin unnecessarily waste too much energy?</a
+              >
+            </li>
+            <li>
+              <a href="#upanddown"
+                >Does the Bitcoin price go up and down too much?</a
+              >
+            </li>
+            <li>
+              <a href="#betterthanfiat">Is Bitcoin better than normal money?</a>
+            </li>
+            <li><a href="#deflation">Can a deflationary economy work?</a></li>
+            <li><a href="#whyithasvalue">Why does Bitcoin have value?</a></li>
+            <li><a href="#whoneedsit">Who needs Bitcoin?</a></li>
+            <li>
+              <a href="#moneylaundering"
+                >Can Bitcoin be used for money laundering?</a
+              >
+            </li>
+
+            <!--<li><a href="#moneyandstate">Why is the separation of money and state important?</a></li>-->
+            <li><a href="#whocodes">Who writes the code for Bitcoin?</a></li>
+            <li><a href="#howitworks">How does Bitcoin work?</a></li>
+            <li><a href="#stateattack">Could a state attack Bitcoin?</a></li>
+            <li>
+              <a href="#toolateforbitcoin">Is it too late to buy Bitcoin?</a>
+            </li>
+            <li><a href="#spendit">Where can I spend Bitcoin?</a></li>
+          </ol>
+        </div>
+
+        <i style="font-size: 15px">last updated 22. January 2020</i>
+        <h2 id="whatisbitcoin">What is Bitcoin?</h2>
+        <p>
+          Bitcoin is the most secure financial ledger in the world. It is
+          disinflationary money and digital cash. Disinflationary means that
+          Bitcoins inflation is reduced by 50% every 4 years until it gets close
+          to 0. There will only ever be 21 million coins. It can be used to
+          transfer billions in value worldwide or for millions of micro
+          transactions per second on the lightning network for in-game payments
+          or the internet of things. It is also programmable money.
+        </p>
+        <p>
+          Bitcoin is decentralized. Everybody can have a copy of the "bitcoin
+          server" (Bitcoin full-node) with all the transactions ever made. There
+          is no "Bitcoin company" and you don't need to sign up anywhere. All
+          you need is a Bitcoin wallet. There are paper wallets, software
+          wallets and hardware wallets. These wallets contain the keys to the
+          Bitcoins.
+        </p>
+        <p>
+          Bitcoins are not stored on your computer or phone, they are stored on
+          the decentralized Bitcoin computer network (Blockchain) and can be
+          accessed with a password (also called private key).
+        </p>
+        <p>
+          Bitcoin is permissionless. This means that you can use Bitcoin to
+          accept payments for your business without signing up anywhere or doing
+          any paperwork. Just post your Bitcoin address or qr code on your
+          website or use an open source payment provider like BTCPayserver.
+        </p>
+        <h2 id="energy">Does Bitcoin unnecessarily waste too much energy?</h2>
+        <p>
+          Many pepole think that Bitcoin unnecessarily wastes energy because of
+          an arbitrary algorithm that could simply be changed to a different
+          energy saving algorithm. Bitcoin mining is not arbitrary. Mining is
+          what makes Bitcoin the most secure computer network in the world. It
+          takes energy, an expensive resource from the real world, and uses it
+          in a security mechanism in the digital world to solve the
+          double-spending problem.
+        </p>
+        <p>
+          <b>The double-spending problem shortly explained:</b> In the digital
+          world, you can send the same file or email as often as you want. A
+          digital money system only works if the same coin can't be sent
+          multiple times. Otherwise everybody in the system could just send the
+          same 1000$ to different merchants and effectively have infinite money.
+          The great innovation in Bitcoin is that it solved this problem of
+          digital scarcity with proof of work mining.
+        </p>
+        <p>
+          The world's hydro, biofuel, solar and wind energy combined could power
+          the Bitcoin network 98 times. The amount of electricity consumed every
+          year in always-on but inactive home devices in the USA alone could
+          power the Bitcoin network for 3.5 years. See these comparisons and
+          others here:
+          <a href="https://cbeci.org/cbeci/comparisons" target="_blank"
+            >cbeci.org/cbeci/comparisons</a
+          >
+        </p>
+        <p>
+          Some people fear that Bitcoin can worsen climate change. Since it only
+          uses a small fraction of the global energy produced, these fears are
+          of course blown out of proportion. Bitcoin could actually be part of
+          the solution to climate change. Thanks to Bitcoin, energy companies
+          now have a way to monetize excess energy and renewable energy that is
+          too remote to use for civilization. Energy companies that mine Bitcoin
+          will be incentivized to increase renewable energy conversion
+          efficiency in a race to be the most profitable Bitcoin miner.
+        </p>
+
+        <p>
+          This blog article from the International Energy Agency explains
+          Bitcoins energy consumption:
+          <a
+            href="https://www.iea.org/newsroom/news/2019/july/bitcoin-energy-use-mined-the-gap.html"
+            target="_blank"
+            >IEA Bitcoin energy consumption</a
+          >
+        </p>
+
+        <p>
+          As you can see, there is no reason to be afraid of Bitcoins energy
+          consumption.
+        </p>
+
+        <h2 id="upanddown">
+          Does the Bitcoin price go up and down too much? (Is it too volatile?)
+        </h2>
+        <a
+          href="https://raw.githubusercontent.com/bitcoineasy/images/master/bitcoin_volatility.png"
+          target="_blank"
+        >
+          <img
+            src="https://raw.githubusercontent.com/bitcoineasy/images/master/bitcoin_volatility.png"
+            alt="Bitcoin price history chart"
+            class="responsive"
+        /></a>
+        <p>
+          The above image shows the history of the Bitcoin price until 10.
+          August 2019. Bitcoin goes up and down like nothing else. The news
+          frequently writes that Bitcoin has crashed or that it is dead. People
+          therefore repeatedly dismiss Bitcoin as a failed or dead project. The
+          above price history shows that despite the regular 85% crashes Bitcoin
+          has had a positive price discovery since 2010.
+        </p>
+
+        <h2 id="betterthanfiat">Is Bitcoin better than normal money?</h2>
+        <p>
+          There will only ever be 21 million Bitcoin. "Normal money" like US
+          Dollars or Euros dont have a fixed supply and can be created by the
+          government and by private banks for their personal advantage. This
+          gives them too much power and inflates the money supply. The rising
+          money supply causes the money to loose value every year. This is
+          called inflation and causes the price of goods and services to go up
+          because the money is worth less. Bitcoin on the other hand can not be
+          inflated by governments or private banks. In Bitcoin, the same rules
+          apply for everybody.
+        </p>
+
+        <p>
+          The following video is the best explanation I could find on how the
+          process of money creation works:
+        </p>
+
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/iFDe5kUUyT0"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <h2 id="deflation">Can a deflationary economy work?</h2>
+        <p>
+          In a world where Bitcoin is the dominant money, the prices of goods
+          and services would go down because the value of Bitcoin goes up over
+          time thanks to the law of demand and supply. When more people want a
+          piece of the limited supply of 21 million coins, the price increases.
+          Even after mass adoption, when almost everybody in the world uses
+          Bitcoin, the value would still go up over time. Growing populations
+          and economies would cause a steady increase in demand.
+        </p>
+        <p>
+          Many economists believe that an economy can't work with deflation
+          because people and companies wont spend nor invest because they would
+          rather keep the Bitcoin and watch it increase in value. This would
+          slow economic growth and increase unemployment.
+        </p>
+        <p>
+          This is a world view that doesn't hold up to scrutiny. People will
+          always have wants and needs and companies will always want to
+          innovate. Some forms of spending would be disincentivized in a Bitcoin
+          economy which could be a good thing. A debt-fueled economy like we
+          have today, with easy money, produces a lot of bullshit since people
+          don't need to put a lot of effort into fundraising. In a Bitcoin world
+          there wont be much easy money floating around funding bullshit. A
+          Bitcoin world could incentivize thoughtful spending which could lead
+          to a more sustainable long-term way of thinking in everyday life and
+          business.
+        </p>
+        <p>
+          Another aspect to consider is that humanity, motivated by never ending
+          economic growth, has exploited the worlds resources and emitted carbon
+          dioxide to a point where ecological disasters are likely to increase.
+          It would be prudent to study and experiment with ways to run societies
+          with less or negative economic growth. This school of thought is
+          called the degrowth or post-growth movement.
+        </p>
+
+        <h2 id="whyithasvalue">Why does Bitcoin have value?</h2>
+        <p>
+          Modern technologies usually capture value by disrupting old
+          technologies.
+        </p>
+        <p>
+          These are old technologies or industries that Bitcoin is disrupting:
+        </p>
+
+        <p><b>GOLD</b> (Bitcoin is rarer and more practical than gold)</p>
+        <p>
+          <b>MONEY</b> (Bitcoin is sound money with a fixed inflation schedule
+          that goes towards 0)
+        </p>
+        <p>
+          <b>SAVINGS ACCOUNTS</b> (negative interest rates vs appreciating
+          asset)
+        </p>
+        <p>
+          <b>STOCKS</b> (other digital assets can be created on Bitcoin side
+          chains like the Liquid network)
+        </p>
+        <p>
+          <b>REMITTANCES</b> (send Bitcoin to anyone in the world for a few
+          cents vs 10% Western Union fees)
+        </p>
+        <p>
+          <b>BLACK MARKETS</b> (people will prefer to buy their stuff online
+          from vendors with positive reviews vs. the scary guy on the street)
+        </p>
+        <p><b>TAX HAVENS</b> (Swiss bank account in your pocket)</p>
+
+        <p>
+          These are all trillion dollar markets. The more Bitcoin eats into
+          these industries, more valuable it becomes.
+        </p>
+
+        <h2 id="whoneedsit">Who needs Bitcoin?</h2>
+        <p>
+          People in the western world have a hard time understanding why we need
+          Bitcoin. Bitcoin is most necessary in countries without stable
+          currencies, or with authoritarian restrictive regimes, where Bitcoin
+          is used to protect wealth from inflation or confiscation.
+        </p>
+        <p>
+          Notable examples of individuals in the western world who needed
+          Bitcoin are whistle blower Edward Snowden and Wikileaks founder Julian
+          Assange. Edward Snowden used Bitcoin to pay for the server on which he
+          uploaded the leaks and Julian Assange had to accept Bitcoin for
+          donations, when Wikileaks was cut off from all payment providers.
+        </p>
+        <p>
+          Looking at the depreciation of fiat currencies over time, one should
+          conclude that everybody needs Bitcoin to protect their wealth against
+          inflation.
+        </p>
+        <a
+          href="https://raw.githubusercontent.com/bitcoineasy/images/master/dollardepreciation.jpg"
+          target="_blank"
+        >
+          <img
+            src="https://raw.githubusercontent.com/bitcoineasy/images/master/dollardepreciation.jpg"
+            alt="Bitcoin stock-to-flow model"
+            class="responsive"
+        /></a>
+
+        <h2 id="moneylaundering">Can Bitcoin be used for money laundering?</h2>
+        <p>
+          Money laundering is the practice of lying about where money that was
+          earned from illicit activities comes from. Assume criminals want to
+          spend 5 million dollars that they made by selling cocaine. When they
+          buy houses, cars and other nice things with that money, they have to
+          pay taxes and explain to the state where the money came from.
+        </p>
+        <p>
+          This works by operating legitimate businesses like restaurants, car
+          washes, sports betting shops etc. and pretending that the money came
+          from there. The drug money gets included in those businesses profits
+          and then its clean.
+        </p>
+        <p>
+          If you are smart, and I believe you are, you should already understand
+          that Bitcoin is not very helpful here. If they sell drugs for Bitcoin
+          and later want to spend it they still have to explain to authorities
+          where those Bitcoin came from. Aside from this, every Bitcoin
+          transaction is public to everyone and saved for eternity
+          <a href="https://mempool.space" target="_blank"
+            >https://mempool.space</a
+          >.
+        </p>
+        <p>Not so good for money launderers.</p>
+
+        <!--<h2 id="moneyandstate">Why is the separation of money and state important?</h2>
+            <p>(answer will follow shortly) Quantitative Easing, Currency Wars, Debt, haircuts...</p>-->
+
+        <h2 id="whocodes">Who writes the code for Bitcoin?</h2>
+        <p>
+          Bitcoin is an open source project and everybody can contribute to the
+          Bitcoin code on Github
+          <a href="https://github.com/bitcoin/bitcoin" target="_blank"
+            >github.com/bitcoin/bitcoin</a
+          >
+        </p>
+
+        <p>
+          Here is the list of everybody who has contributed to the open source
+          Bitcoin code
+          <a
+            href="https://github.com/bitcoin/bitcoin/graphs/contributors"
+            target="_blank"
+            >Bitcoin Github contributors</a
+          >
+        </p>
+
+        <h2 id="howitworks">How does Bitcoin work?</h2>
+
+        <p>
+          Bitcoin is a decentralized peer-to-peer computer network, in which
+          every participant has a copy of all transactions ever made. As a
+          result, the network is able to automatically recognise fraudulent
+          transactions and reject them.
+        </p>
+        <p>
+          Bitcoins are created in a process called mining, which also makes
+          Bitcoin so secure. Bitcoin miners have to find a certain number that
+          requires a lot of computing power to find. Once they have found this
+          number, they get Bitcoins as a reward and are allowed to add the next
+          block to the blockchain, in other words, to add the next batch of
+          transactions to the ledger. If they try to cheat by creating fake
+          Bitcoin for themselves, their block gets rejected and the reward goes
+          to an honest miner.
+        </p>
+
+        <p>
+          This is the best video I have found on how the Bitcoin blockchain and
+          mining works. It slowly explains the most important parts (blocks,
+          nonces, hashes) and how they work together in making Bitcoin secure.
+        </p>
+
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/_160oMzblY8"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <h2 id="stateattack">Could a state attack Bitcoin?</h2>
+        <p>
+          <b>A State can not buy enough hardware for a 51% attack.</b> The
+          number of manufacturers is well known and there is a shortage of
+          miners. All manufacturing facilities are running at full capacity
+          producing chips for graphics cards, AI and supercomputers. Since the
+          existing installed number of miners is many times larger than the
+          annual production of new miners, a nation state would need to buy all
+          the supply of hardware manufacturers worldwide for many years, just to
+          be able to reach 51%. This makes entering the market secretly
+          impossible.
+        </p>
+
+        <p>
+          <b
+            >Only theoretically can a state manufacture enough miners for a 51%
+            attack.</b
+          >
+          It has to spend billions for the facilities, billions for the
+          production and hundreds of millions for the energy and would not
+          achieve much. <b>With a 51% attack you do not control Bitcoin.</b> The
+          only thing you can do is make fake transactions and block transactions
+          for a short period of time. Both attacks are identifiable and can be
+          remedied by the Bitcoin ecosystem.
+        </p>
+
+        <p>
+          The state can get mining rewards about half the time but these
+          Bitcoins would be identifiable and can be rejected by the Bitcoin
+          community. Hence, the state can not profit from mining and would be
+          competing with profitable miners.
+        </p>
+
+        <p>
+          After a short period of time, the Bitcoin ecosystem would decide to
+          fork off the attacking state miners and cause a chain split
+          (bifurcation of the bitcoin network into two):
+        </p>
+
+        <p>1. original-bitcoin-chain. 2. state-attack-chain.</p>
+
+        <p>
+          After this bifurcation the attacking state miners will be mining on
+          the state-attack-chain and not affect the original-bitcoin-chain
+          anymore.
+        </p>
+        <p>
+          The result of this failed nation state attack would increase the
+          confidence in Bitcoin and send Bitcoin prices soaring.
+        </p>
+        <p>
+          In this video Andreas Antonopoulos answers questions on different ways
+          to attack Bitcoin:
+        </p>
+
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/htxPRTJLK-k"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <h2 id="toolateforbitcoin">Is it too late to buy Bitcoin?</h2>
+        <font color="red"
+          >This is not financial advice! Models are not accurate predictions of
+          the future.</font
+        >
+
+        <p>
+          In the Bitcoin
+          <a href="https://t.co/aoUGB62jFw" target="_blank"
+            >stock-to-flow model</a
+          >
+          developed by
+          <a href="https://twitter.com/100trillionUSD" target="_blank">PlanB</a
+          >, the Bitcoin price reaches a price of 105,000$ by 2021 and
+          1,300,000$ by 2025. Stock-to-flow models accurately calculate the
+          value of Gold and other precious metals. According to this model you
+          are still not too late if you want to profit from Bitcoins price
+          appreciation. If Bitcoin only catches up with Golds 8 trillion dollar
+          marketcap, one Bitcoin would be worth around 300,000$.
+        </p>
+
+        <p>Bitcoin stock-to-flow model graph:</p>
+
+        <a
+          href="https://raw.githubusercontent.com/bitcoineasy/images/master/stock-to-flow.png"
+          target="_blank"
+        >
+          <img
+            src="https://raw.githubusercontent.com/bitcoineasy/images/master/stock-to-flow.png"
+            alt="Bitcoin stock-to-flow model"
+            class="responsive"
+        /></a>
+        <p>
+          source:
+          <a href="https://digitalik.net/btc" target="_blank"
+            >digitalik.net/btc</a
+          >
+        </p>
+
+        <h2 id="spendit">Where can I spend Bitcoin?</h2>
+        <p>
+          It may not be a good idea to spend too much Bitcoin since we are still
+          in the early stages of adoption (less then 1% of the world population
+          owns Bitcoin) but it may be fun to do so now and then.
+        </p>
+        <p>
+          <a href="https://coinmap.org" target="_blank"
+            >Bitcoin stores world map</a
+          >
+        </p>
+        <p>
+          <a href="https://lightningnetworkstores.com/" target="_blank"
+            >Online stores</a
+          >
+        </p>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $(".toggle").click(function () {
+              $(".toggle").toggleClass("active");
+              $("body").toggleClass("night");
+            });
+          });
+        </script>
+
+        <script>
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function () {
+            scrollFunction();
+          };
+
+          function scrollFunction() {
+            if (
+              document.body.scrollTop > 600 ||
+              document.documentElement.scrollTop > 600
+            ) {
+              document.getElementById("myBtn").style.display = "block";
+            } else {
+              document.getElementById("myBtn").style.display = "none";
+            }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+          }
+        </script>
+      </article>
+      <aside class="aside aside-1"></aside>
+      <aside class="aside aside-2"></aside>
+      <footer class="footer">
+        <p style="font-size: 14px">
+          contact:
+          <script type="text/javascript">
+            emailE = "protonmail.ch";
+
+            emailE = "bitcoinsage" + "@" + emailE;
+
+            document.write(
+              '<A href="mailto:' + emailE + '">' + emailE + "</a>"
+            );
+          </script>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

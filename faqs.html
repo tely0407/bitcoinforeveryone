@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bitcoin FAQs.</title>
+  <meta name="Bitcoin frequently asked questions" content="Bitcoin frequently asked questions">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://raw.githubusercontent.com/bitcoineasy/images/master/bitcoinfavicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="toggle"><i class="fa fa-moon-o" aria-hidden="true"></i></div>
+
+
+  <div class="content">
+
+    <div class="navbar" id="mynavbar">
+      <a href="index.html">Home</a>
+      <a href="resources.html">Resources</a>
+      <a href="faqs.html">FAQs</a>
+    <!--<a href="donate.html">Donate</a> -->
+
+      <a href="javascript:void(0);" class="icon" onclick="responsiveNavbarFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <script>
+      function responsiveNavbarFunction() {
+        var x = document.getElementById("mynavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+
+
+    <header class="header">
+      <a href="https://bitcoineasy.github.io"> <img src="https://raw.githubusercontent.com/bitcoineasy/images/master/Bitcoin.png" alt="Bitcoin logo" class="logo"></a>
+      <h1>Bitcoin FAQs</h1>
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i style='font-size:24px' class='fas'>&#xf062;</i></button>
+
+
+    <article class="main">
+      <i style="font-size:15px">last updated 25. August 2019</i>
+
+      <button class="accordion">Is Bitcoin backed by anything?</button>
+      <div class="panel">
+        <br>
+        <p>Bitcoins are not backed by anything. Your government currency isn’t backed by anything either. The gold standard was abolished by President Nixon in 1971. Before 1971 the USD in theory was redeemable for gold. Now over 90% of government
+          fiat currency is just numbers saved on computers.</p>
+
+        <p>Bitcoins have different properties that the market trusts. The inflation is fixed and cant be changed. There will only ever be 21 million Bitcoins. This is provable and verifiable. Bitcoin has never been hacked in its 10 years of existence
+          thanks to the proof of work system that makes Bitcoin the most secure computer network in the world.
+          These two properties make Bitcoin sound money like gold.</p>
+      </div>
+
+      <button class="accordion">Can bitcoin only be used online?</button>
+      <div class="panel">
+        <br>
+        <p>Bitcoins can be used online and offline. A transaction can be sent via internet, radio or satellite.</p>
+
+        <p>Opendime is a small USB stick that allows you to spend Bitcoin offline like a dollar bill. <a href="https://opendime.com/" target="_blank">Opendime.com</a></p>
+
+        <p>Coinmap shows you places everywhere in the world where you can spend Bitcoin at retail shops. <a href="https://.coinmap.org" target="_blank">Coinmap.org</a></p>
+
+        <p>Bitcoin ATM Radar shows you ATMs globally where you can buy or sell Bitcoin for cash. <a href="https://coinatmradar.com/" target="_blank">Coinmap.org</a></p>
+
+      </div>
+
+      <button class="accordion">Bitcoin is too expensive, what will be the next money maker?</button>
+      <div class="panel">
+        <br>
+        <p>Compared to what is Bitcoin too expensive? Compared to gold Bitcoin is very cheap. Gold marketcap: 8 Trillion vs Bitcoin marketcap: 0.18 Trillion.</p>
+
+        <p>Gold is 40 times more expensive than Bitcoin even though today one ounce of gold costs 1,490$ and one Bitcoin costs 10,000$.</p>
+
+        <p>Don’t fall victim to the unit bias. Just because the unit price of some asset is less than the unit price of another asset doesn’t mean it is cheaper.</p>
+
+        <p>Lets compare Bitcoin to another cryptocurrency.
+
+          <p>One Ether costs 200$ today. If you buy 1 Ether you own 0.000001% of all Ether. If you buy one Bitcoin you own 0.000005% of all Bitcoin. 1 Bitcoin gives you 5 times as much percentage ownership of the entire network.</p>
+
+          <p>For 10.000$ you get 50 Ether instead of 1 Bitcoin but your percentage ownership in the network only increases by 10. In other words Bitcoin is only 10 times more expensive than Ether instead of 50 times as the price difference
+            suggests.</p>
+
+      </div>
+
+      <button class="accordion">
+        Is any cryptocoin capable of knocking Bitcoin off its #1 position?</button>
+      <div class="panel">
+        <br>
+
+        <p> Theoretically it is possible but it is very unlikely. Bitcoin has been number 1 for 10 years. Replacing a dominant technology is not easy because it has an established brand and strong network effects (companies, developers, users). The
+          contestant has to be many times better than the current leader. There are only a handful cryptocurrencies with little improvements over Bitcoin and these improvements can be integrated into the Bitcoin code if they really prove to be big.
+        </p>
+
+        <p> Every other cryptocurrency tries to market itself as somehow superior to Bitcoin. The supporters and marketers of these cryptocurrencies use transaction speed and cost as a metric for superiority. What they don’t tell you is that their
+          technology sacrifices safety for cost and speed. Blockchains are inherently slow because every transaction has to be recorded on every node in the blockchain (computer in the decentralized computer network). So to increase speed these
+          projects</p>
+
+        <ol>
+          <li>Increase block size</li>
+          <li>reduce block propagation time</li>
+          <li>use POS instead of POW</li>
+        </ol>
+
+        <p> Increased block size increases speed and reduces cost because more transactions can be processed in each block. As fees increase when transactions compete for block space, larger blocks also reduce cost. This is only a temporary solution
+          because the block size has to be increased proportionally to the use of the network. If it is almost free to use the blockchain people will use up the space to save any data they like in the blocks like property titles, contracts, images,
+          anything they like really. So as transactions and files fill up the blocks and start competing for space, speed slows down and fees rise forcing another increase of block size. This becomes a vicious cycle.</p>
+
+        <p> Bitcoins solution is to have a fixed block size and a fee market where network users compete for space by paying fees. Layer 2 scaling solutions like the Lightning Network allow for cheap and fast transactions with Bitcoin.</p>
+
+        <p> A reduced block propagation time (every 10 minutes in Bitcoin) allows more transactions over a smaller period of time. This solution reduced safety because the time between blocks is an important feature against double spend attacks.</p>
+
+        <p> The more mining energy is spent between blocks the harder it becomes to double spend. So while businesses like to wait 1 to 3 confirmations for Bitcoin (10 to 30 minutes) they like to wait 20 to 50 confirmations for other cryptocurrencies
+          to make sure that the transaction has not been double spent.</p>
+
+        <p> POS tries to use a system of incurring financial penalties instead of spending energy (POW) for safety. POS is unproven and untested at scale and would be less secure than POW.</p>
+
+
+      </div>
+
+      <button class="accordion">Is Bitcoin used by terrorists and money launderers?</button>
+
+      <div class="panel">
+        <br>
+
+        <p>Yes, terrorists and money launderers use cars, planes, ships, shoes, credit cards, Visa, Paypal, eBay, dollars, euros and Bitcoin. Bitcoin is not their first choice though.</p>
+
+        <ul class="resources_list" style="list-style-type:square;">
+          <li><a href="https://www.bloomberg.com/news/articles/2019-03-09/money-to-launder-here-s-how-hint-find-a-bank-quicktake" target="_blank">Money to Launder? Here's How (Hint: Find a Bank)</a></li>
+          <li><a href="https://www.cbsnews.com/news/how-the-danske-bank-money-laundering-scheme-involving-230-billion-unraveled-60-minutes-2019-05-19/" target="_blank">How the Danske Bank money-laundering scheme involving $230 billion unraveled</a>
+          </li>
+          <li><a href="https://www.theguardian.com/business/2012/jul/17/hsbc-executive-resigns-senate" target="_blank">HSBC 'sorry' for aiding Mexican drugs lords, rogue states and terrorists </a></li>
+          <li><a href="https://www.independent.co.uk/news/uk/crime/london-is-now-the-global-money-laundering-centre-for-the-drug-trade-says-crime-expert-10366262.html" target="_blank">London is now the global money-laundering centre for the drug
+              trade, says crime expert </a></li>
+          <li><a href="https://www.npr.org/sections/thetwo-way/2017/08/11/542748232/isis-used-ebay-as-part-of-terror-network-unsealed-fbi-affidavit-shows?t=1565438677422" target="_blank">ISIS Used eBay As Part Of Terror Network, Unsealed FBI
+              Affidavit Shows </a></li>
+        </ul>
+      </div>
+
+
+
+
+
+      <button class="accordion">What protections do cryptocurrency systems have against theft and fraud?</button>
+      <div class="panel">
+        <br>
+        <p>Cryptocurrencies use public-key cryptography.</p>
+
+        <p>Bitcoins are not stored on your computer or smartphone. Bitcoins are just a number on the decentralized Bitcoin network (Blockchain).</p>
+
+        <p>When you buy 0.1 Bitcoin and transfer them to your Bitcoin wallet, every computer in the Bitcoin network (Bitcoin nodes) will save a copy of the transaction. In other words everybody knows that your address has 0.1 Bitcoin.</p>
+
+        <p>When you create your wallet you are given a private key. This private key gives you access to those Bitcoin. The Bitcoin are only as safe as the private key.</p>
+
+        <p>A convenient way for maximum security are hardware wallets like the Ledger Nano. The private key of a hardware wallet will never be on a device with internet and therefore impossible for hackers to steal.</p>
+        <p>Bitcoin has never been hacked in its 10 years of existence. The stories you read about Bitcoin being hacked always refer to companies that didn’t securely store their private keys.</p>
+      </div>
+
+
+
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+      </script>
+
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('.toggle').click(function() {
+            $('.toggle').toggleClass('active')
+            $('body').toggleClass('night')
+          })
+        })
+      </script>
+
+      <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+          scrollFunction()
+        };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+      </script>
+
+    </article>
+    <aside class="aside aside-1"></aside>
+    <aside class="aside aside-2"></aside>
+    <footer class="footer">
+      <p style="font-size:14px">contact: <SCRIPT TYPE="text/javascript">
+          emailE = 'protonmail.ch'
+
+          emailE = ('bitcoinsage' + '@' + emailE)
+
+          document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+        </script>
+      </p>
+
+    </footer>
+  </div>
+
+</body>
+
+</html>
