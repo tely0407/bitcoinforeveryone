@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bitcoin Videos</title>
+    <meta charset="utf-8" />
+    <meta
+      name="Videos on Bitcoin"
+      content="Interesting Videos on Bitcoin and money."
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/1c9b1ed40a.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="toggle"><i class="fa fa-moon-o" aria-hidden="true"></i></div>
+
+    <div class="content">
+      <div class="navbar" id="stickynavbar">
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="faqs.html">Videos</a>
+        <!--<a href="donate.html">Donate</a>-->
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="responsiveNavbarFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <script>
+        function responsiveNavbarFunction() {
+          var x = document.getElementById("stickynavbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+      </script>
+
+      <div class="wrapper">
+        <header class="header">
+          <h1>Bitcoin Video.</h1>
+        </header>
+
+        <div class="row">
+          <div class="column">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/-2RlW7bIe-s"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".toggle").toggleClass("active");
+          $("body").toggleClass("night");
+        });
+      });
+    </script>
+  </body>
+</html>
